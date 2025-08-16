@@ -9,5 +9,6 @@ router.use("/auth", require("./auth.routes"));
 router.use("/contacts", require("./contacts.routes"));
 router.use("/trips", require("./trips.routes"));
 router.use("/sos", require("./sos.routes"));
+router.use("/push", require("./push.routes"));
 
 module.exports = router;

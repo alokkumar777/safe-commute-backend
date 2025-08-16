@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { requireAuth } = require("../middlewares/auth");
 const User = require("../models/User");
 const webpush = require("web-push");
+require("dotenv").config();
 
 webpush.setVapidDetails(
   process.env.WEB_PUSH_SUBJECT || "mailto:admin@example.com",
